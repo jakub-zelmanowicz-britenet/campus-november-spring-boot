@@ -32,4 +32,8 @@ public class AuthService {
     }
 
     public void register() {}
+
+    public Integer getUserId(String token) {
+        return this.activeTokenMap.get(token);
+    }
 }
